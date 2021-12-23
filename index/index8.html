@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw32</title>
+</head>
+
+<body>
+    Задание:
+    Дан массив целых чисел. Проверьте есть ли в нем одинаковые элементы. Если есть выведите их на экран.
+
+
+
+    <script>
+        let values = [10, 20, 4, 6, 11, 9, 125, 10, 8, 0, 3, 5, 89, 12, 46, 77, 3];
+
+        for (let i = 0; i < values.length - 1; i++) {
+
+            let current = values[i];
+            for (let n = i + 1; n < values.length; n++) {
+                const element = values[n];
+
+                if (current == element) {
+                    console.log(`${current} повторяется`);
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
